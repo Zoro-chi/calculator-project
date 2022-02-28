@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+#ref {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: 2px solid black;
+  height: 500px;
+  width: 450px;
+}
+#screen {
+  height: 100px;
+  width: inherit;
+  border: 1px solid red;
+}
+.buttons {
+  height: 50px;
+  width: 100px;
+  border: 1px solid red;
+  font-size: xx-large;
+  font-family: cursive;
+  padding-left: 40px;
+}
