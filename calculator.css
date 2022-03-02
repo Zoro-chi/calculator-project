@@ -28,6 +28,10 @@
   height: 7rem;
   width: inherit;
   border: 7px solid yellow;
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 700;
+  color: black;
 }
 .buttons {
   height: 3rem;
@@ -36,9 +40,14 @@
   font-size: xx-large;
   font-family: cursive;
   padding-left: 2.5rem;
-  color: white;
+  color: black;
 }
-#clear {
+#clear,
+#del {
   width: 12rem;
   padding-left: 4.6rem;
+}
+.clicked {
+  box-shadow: 7px 6px 28px 1px rgba(241, 9, 145, 0.89);
+  transform: translateY(4px);
 }
