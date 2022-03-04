@@ -1,3 +1,4 @@
+const buttons = document.querySelectorAll(".buttons")
 const nums = document.querySelectorAll(".nums")
 const screen = document.querySelector("#screen")
 const del = document.querySelector("#del")
@@ -22,6 +23,7 @@ nums.forEach(num =>{
         screen.textContent += event.target.value
     }
 })
+
 let firstNum = ""
 let ope = ""
 let secondNum = ""
@@ -32,7 +34,7 @@ fun.forEach(func =>{
     function operator(func){
         firstNum = parseFloat(screen.innerText)
         ope = event.target.value
-        // inner.textContent = `${firstNum} ${ope}`
+        inner.textContent = `${firstNum} ${ope}`
         screen.textContent = ""
         console.log(firstNum)
         console.log(ope)
@@ -42,6 +44,7 @@ fun.forEach(func =>{
 op.addEventListener("click", equal)
 function equal(){
     secondNum = parseFloat(screen.innerText)
+    inner.textContent = ""
     console.log(secondNum)
     if (ope == "+"){
         res = add(firstNum, secondNum)
@@ -49,10 +52,10 @@ function equal(){
     } else if (ope == "-"){
         res = sub(firstNum, secondNum)
         screen.textContent = res
-    }else if (ope == "*"){
+    }else if (ope == "x"){
         res = multiply(firstNum, secondNum)
         screen.textContent = res
-    }else if (ope == "/"){
+    }else if (ope == "÷"){
         res = divide(firstNum, secondNum)
         screen.textContent = res
     }
@@ -61,4 +64,12 @@ function equal(){
 clear.addEventListener("click", clearAll)
 function clearAll(){
     screen.textContent = ""
+}
+
+del.addEventListener("click", dlt)
+function dlt(){
+    let screenValue = screen.innerText
+    screenValue = screenValue.slice(0, -1);
+    console.log(screenValue)
+    return screen.textContent = screenValue
 }

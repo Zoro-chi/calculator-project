@@ -8,40 +8,48 @@
   min-width: 100%;
   min-height: 100%;
 }
-#ref {
+body {
   display: flex;
+  flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
-  position: fixed;
-  margin-left: 450px;
-  margin-top: 200px;
+  height: 100vh;
+  align-content: center;
 }
 #container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  border: 2px solid black;
-  height: 31rem;
-  width: 28rem;
+  border: 1px solid limegreen;
+  height: 38rem;
+  width: 30rem;
+  position: fixed;
+  margin-left: 434px;
 }
 #screen {
   height: 7rem;
   width: inherit;
-  border: 7px solid yellow;
+  border: 1px solid darkolivegreen;
   font-size: 50px;
-  font-style: italic;
+  font-family: cursive;
   font-weight: 700;
-  color: black;
+  color: yellow;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  word-break: break-word;
 }
-/* #innerScreen {
-  height: 3rem;
-  width: fit-content;
-  align-self: flex-start;
-  margin-left: auto;
-  font-size: 20px;
-} */
+#innerScreen {
+  height: 100px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: xxx-large;
+  font-weight: 900;
+  color: yellow;
+  word-break: break-word;
+}
 .buttons {
   height: 3rem;
   width: 6rem;
@@ -50,6 +58,7 @@
   font-family: cursive;
   padding-left: 2.5rem;
   color: black;
+  background-color: grey;
 }
 #clear,
 #del {
