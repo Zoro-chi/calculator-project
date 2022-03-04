@@ -28,11 +28,20 @@
   height: 7rem;
   width: inherit;
   border: 7px solid yellow;
-  font-size: 100px;
+  font-size: 50px;
   font-style: italic;
   font-weight: 700;
   color: black;
+  display: flex;
+  align-items: flex-end;
 }
+/* #innerScreen {
+  height: 3rem;
+  width: fit-content;
+  align-self: flex-start;
+  margin-left: auto;
+  font-size: 20px;
+} */
 .buttons {
   height: 3rem;
   width: 6rem;
