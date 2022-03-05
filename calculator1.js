@@ -29,17 +29,19 @@ let ope = ""
 let secondNum = ""
 let res = ""
 
-fun.forEach(func =>{
-    func.addEventListener("click", operator)
-    function operator(func){
-        firstNum = parseFloat(screen.innerText)
-        ope = event.target.value
-        inner.textContent = `${firstNum} ${ope}`
-        screen.textContent = ""
-        console.log(firstNum)
-        console.log(ope)
+fun.forEach(func =>func.addEventListener("click", operator))
+function operator(func){
+    if  (screen.childNodes.length !== 0 && inner.childNodes.length !== 0){
+        equal()
     }
-})
+    firstNum = parseFloat(screen.innerText)
+    ope = event.target.value
+    inner.textContent = `${firstNum} ${ope}`
+    screen.textContent = ""
+    console.log(firstNum)
+    console.log(ope)
+}
+
 
 op.addEventListener("click", equal)
 function equal(){
@@ -64,6 +66,7 @@ function equal(){
 clear.addEventListener("click", clearAll)
 function clearAll(){
     screen.textContent = ""
+    inner.textContent = ""
 }
 
 del.addEventListener("click", dlt)
