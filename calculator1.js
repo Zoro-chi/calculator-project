@@ -15,14 +15,13 @@ const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
 // ------------------------------------------------------------------------------------------------------------------
 
-// screen.innerText = 0
+// screen.textContent = 0
 
-nums.forEach(num =>{
-    num.addEventListener("click", show)
-    function show(num){
-        screen.textContent += event.target.value
-    }
-})
+nums.forEach(num => num.addEventListener("click", show))
+function show(num){
+    screen.textContent += event.target.value
+}
+
 
 let firstNum = ""
 let ope = ""

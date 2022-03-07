@@ -23,7 +23,7 @@ body {
   height: 38rem;
   width: 30rem;
   position: fixed;
-  margin-left: 27rem;
+  margin-left: 32rem;
 }
 #screen {
   height: 7rem;
@@ -65,8 +65,82 @@ body {
   width: 12rem;
   padding-left: 4.6rem;
 }
-@media all and (max-width: 950px) {
+@media all and (max-width: 768px) {
+  #container {
+    margin-left: 10rem;
+  }
+}
+@media all and (max-width: 320px) {
   #bgvideo {
     display: none;
+  }
+  .buttons {
+    max-height: 3rem;
+    width: 4rem;
+    font-size: larger;
+  }
+  #container {
+    height: 100vh;
+    width: 95vw;
+    margin: 0;
+    background-color: beige;
+  }
+  #clear,
+  #del {
+    padding-left: 1.2rem;
+    max-width: 6rem;
+  }
+  #screen,
+  #innerScreen {
+    background-color: black;
+  }
+}
+@media all and (max-width: 375px) {
+  #bgvideo {
+    display: none;
+  }
+  .buttons {
+    max-height: 3rem;
+    max-width: 5rem;
+    font-size: larger;
+  }
+  #container {
+    height: 100vh;
+    width: 95vw;
+    margin: 0;
+    background-color: beige;
+  }
+  #clear,
+  #del {
+    padding-left: 1.2rem;
+    max-width: 6rem;
+  }
+  #screen,
+  #innerScreen {
+    background-color: black;
+  }
+}
+@media all and (max-width: 425px) {
+  #bgvideo {
+    display: none;
+  }
+  .buttons {
+    max-height: 3rem;
+    font-size: larger;
+  }
+  #container {
+    height: 100vh;
+    width: 95vw;
+    margin: 0;
+    background-color: beige;
+  }
+  #clear,
+  #del {
+    padding-left: 1.2rem;
+    max-width: 6rem;
+  }
+  #screen,
+  #innerScreen {
+    background-color: black;
   }
 }
